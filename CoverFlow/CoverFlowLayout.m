@@ -40,14 +40,20 @@
     // Modify the layout attributes as needed here
     
     for (UICollectionViewLayoutAttributes *att in attributes) {
+//        Code for Scale
+//        CGFloat distance =
+//        CGRectGetMidX(visibleRegion) - att.center.x;
+//        
+//        CGFloat normalizedDistance = 1.0 - fabs(distance/zoomDistance);
+//
+//        [att setTransform3D:CATransform3DMakeScale(normalizedDistance, normalizedDistance, normalizedDistance)];
         
-        CGFloat distance =
-        CGRectGetMidX(visibleRegion) - att.center.x;
+        // Code for rotation
+        CGFloat distance = CGRectGetMidX(visibleRegion) - att.center.x;
         
-        CGFloat normalizedDistance = 1.0 - fabs(distance/zoomDistance);
-
-        [att setTransform3D:CATransform3DMakeScale(normalizedDistance, normalizedDistance, normalizedDistance)];
+        CGFloat normalizedDistance = (1.0 - fabs(distance/zoomDistance));
         
+        [att setTransform3D:CATransform3DMakeRotation(normalizedDistance * 180 / M_PI, 0, 1, 0)];
         
 
         
