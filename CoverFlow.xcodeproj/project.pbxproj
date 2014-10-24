@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		523530C019FAC73600B066D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 523530BF19FAC73600B066D3 /* main.m */; };
 		523530C319FAC73600B066D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 523530C219FAC73600B066D3 /* AppDelegate.m */; };
-		523530C619FAC73600B066D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523530C519FAC73600B066D3 /* ViewController.m */; };
 		523530C919FAC73600B066D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523530C719FAC73600B066D3 /* Main.storyboard */; };
 		523530CB19FAC73600B066D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523530CA19FAC73600B066D3 /* Images.xcassets */; };
 		523530CE19FAC73600B066D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523530CC19FAC73600B066D3 /* LaunchScreen.xib */; };
 		523530DA19FAC73600B066D3 /* CoverFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523530D919FAC73600B066D3 /* CoverFlowTests.m */; };
+		523530E519FAC7B600B066D3 /* FlowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523530E419FAC7B600B066D3 /* FlowCollectionViewController.m */; };
+		523530E819FAC87700B066D3 /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 523530E719FAC87700B066D3 /* CoverFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		523530BF19FAC73600B066D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		523530C119FAC73600B066D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		523530C219FAC73600B066D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		523530C419FAC73600B066D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		523530C519FAC73600B066D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		523530C819FAC73600B066D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		523530CA19FAC73600B066D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		523530CD19FAC73600B066D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		523530D319FAC73600B066D3 /* CoverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		523530D819FAC73600B066D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523530D919FAC73600B066D3 /* CoverFlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverFlowTests.m; sourceTree = "<group>"; };
+		523530E319FAC7B600B066D3 /* FlowCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCollectionViewController.h; sourceTree = "<group>"; };
+		523530E419FAC7B600B066D3 /* FlowCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCollectionViewController.m; sourceTree = "<group>"; };
+		523530E619FAC87700B066D3 /* CoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayout.h; sourceTree = "<group>"; };
+		523530E719FAC87700B066D3 /* CoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,11 @@
 			children = (
 				523530C119FAC73600B066D3 /* AppDelegate.h */,
 				523530C219FAC73600B066D3 /* AppDelegate.m */,
-				523530C419FAC73600B066D3 /* ViewController.h */,
-				523530C519FAC73600B066D3 /* ViewController.m */,
+				523530E619FAC87700B066D3 /* CoverFlowLayout.h */,
+				523530E719FAC87700B066D3 /* CoverFlowLayout.m */,
 				523530C719FAC73600B066D3 /* Main.storyboard */,
+				523530E319FAC7B600B066D3 /* FlowCollectionViewController.h */,
+				523530E419FAC7B600B066D3 /* FlowCollectionViewController.m */,
 				523530CA19FAC73600B066D3 /* Images.xcassets */,
 				523530CC19FAC73600B066D3 /* LaunchScreen.xib */,
 				523530BD19FAC73600B066D3 /* Supporting Files */,
@@ -219,7 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523530C619FAC73600B066D3 /* ViewController.m in Sources */,
+				523530E519FAC7B600B066D3 /* FlowCollectionViewController.m in Sources */,
+				523530E819FAC87700B066D3 /* CoverFlowLayout.m in Sources */,
 				523530C319FAC73600B066D3 /* AppDelegate.m in Sources */,
 				523530C019FAC73600B066D3 /* main.m in Sources */,
 			);

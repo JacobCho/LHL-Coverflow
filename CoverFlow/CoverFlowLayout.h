@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CoverFlowLayout.h
 //  CoverFlow
 //
 //  Created by Jacob Cho on 2014-10-24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CoverFlowLayout : UICollectionViewFlowLayout
 
 @end
-
